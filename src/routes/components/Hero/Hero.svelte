@@ -16,7 +16,7 @@
           />
         </svg>
       </div>
-      <h1 class="text-5xl font-bold">Starter Kit</h1>
+      <h1 class="text-5xl font-bold font-primary">Starter Kit</h1>
       <p class="py-6 font-primary uppercase">
         Svelte Kit + TailwindCss + DaisyUI + Storybook?
       </p>
