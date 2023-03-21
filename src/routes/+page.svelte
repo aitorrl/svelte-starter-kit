@@ -1,5 +1,4 @@
 <script>
-  import NavBar from './components/navigation/NavBar.svelte';
 	import Hero from './components/Hero/Hero.svelte';
 </script>
 <svelte:head>
