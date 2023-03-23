@@ -1,6 +1,5 @@
 import { error } from '@sveltejs/kit';
 
-/** @type {import('./$types').PageLoad} */
 export async function load({ params }){
     const post = await import(`../posts/${params.slug}.md`)
     const { title, date, tags } = post.metadata

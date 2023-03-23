@@ -8,6 +8,3 @@
 <section>
 <Hero />
 </section>
-
-
-

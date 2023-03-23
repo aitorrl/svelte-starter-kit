@@ -4,8 +4,7 @@ Este kit de inicio incluye:
 -Svelte Kit, 
 -TailwindCss, 
 -DaisyUI 
--Storybook? (WIP)
--Mdsevx (WIP)
+-Mdsevx
 
 ## Instalar
 
@@ -15,7 +14,4 @@ Si quieres instalar el proyecto: `yarn install`
 
 ejecutar: `yarn dev`
 
-## Storybook?
-
-ejecutar: `yarn storybook`
 

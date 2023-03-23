@@ -1,6 +1,5 @@
 <script>
 	import "../app.css";
-	import './styles.css';
 </script>
 
 
@@ -22,14 +21,11 @@
 
 <style>
 	main {
-		flex: 1;
-		display: flex;
-		flex-direction: column;
-		padding: 1rem;
 		width: 100%;
-		max-width: 64rem;
 		margin: 0 auto;
 		box-sizing: border-box;
+		background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+		min-height: 100vh;
 	}
 
 

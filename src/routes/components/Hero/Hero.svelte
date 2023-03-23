@@ -1,3 +1,6 @@
+<script>
+import { goto } from '$app/navigation';
+</script>
 <div class="hero min-h-screen ">
   <div class="hero-content text-center">
     <div class="max-w-md">
@@ -18,9 +21,9 @@
       </div>
       <h1 class="text-5xl font-bold font-primary">Starter Kit</h1>
       <p class="py-6 font-primary uppercase">
-        Svelte Kit + TailwindCss + DaisyUI + Storybook?
+       🚀 🛸 🏖️ Svelte Kit + TailwindCss + DaisyUI 🦖  🐳    ☠️ 
       </p>
-      <button class="btn btn-primary">Get Started</button>
+      <button on:click={() => goto('/blog')} class="btn btn-primary">Get Started</button>
     </div>
   </div>
 </div>
