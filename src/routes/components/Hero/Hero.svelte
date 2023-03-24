@@ -1,7 +1,13 @@
 <script>
 import { goto } from '$app/navigation';
+import { fade, scale } from 'svelte/transition';
+
+let y;
+
 </script>
-<div class="hero min-h-screen ">
+<svelte:window bind:scrollY={y} />
+
+<div class="hero h-[105vh]">
   <div class="hero-content text-center">
     <div class="max-w-md">
       <div class="mb-5">
@@ -23,7 +29,18 @@ import { goto } from '$app/navigation';
       <p class="py-6 font-primary uppercase">
        🚀 🛸 🏖️ Svelte Kit + TailwindCss + DaisyUI 🦖  🐳    ☠️ 
       </p>
-      <button on:click={() => goto('/blog')} class="btn btn-primary">Get Started</button>
+      {#if !y }
+      <div transition:scale={{
+        duration: 1000,
+        baseScale: 0.1
+      }}>
+      <p classs="text-xl">&darr;</p>
+      </div>
+      {/if}  
+      {#if y > 10}
+        <button in:fade="{{ duration: 800 }}" out:fade={{ duration: 200 }} on:click={() => goto('/blog')} class="btn btn-primary">Get Started</button>
+      {/if}   
     </div>
   </div>
 </div>
+

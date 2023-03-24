@@ -1,9 +1,10 @@
 <script>
     export let data;
     import { convertDateToString } from '$lib/utils.js'
+    import { fade } from 'svelte/transition';
 </script>
 <div class="container">
-    <article class="mx-40 py-10">
+    <article in:fade="{{ duration: 800 }}" out:fade={{ duration: 0 }} class="mx-40 py-10">
         <p class="text-sm mb-4">{convertDateToString(data.date)}</p>
         <h1 class="text-4xl bold mb-4">{ data.title }</h1>
         <div class="tags mb-4">
