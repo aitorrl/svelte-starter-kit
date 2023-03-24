@@ -30,11 +30,11 @@ let y;
        🚀 🛸 🏖️ Svelte Kit + TailwindCss + DaisyUI 🦖  🐳    ☠️ 
       </p>
       {#if !y }
-      <div transition:scale={{
-        duration: 1000,
-        baseScale: 0.1
-      }}>
-      <p classs="text-xl">&darr;</p>
+        <div transition:scale={{
+          duration: 1000,
+          baseScale: 0.2
+        }}>
+      <p class="text-xl">&darr;</p>
       </div>
       {/if}  
       {#if y > 10}
@@ -43,4 +43,3 @@ let y;
     </div>
   </div>
 </div>
-
