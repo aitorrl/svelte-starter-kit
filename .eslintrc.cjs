@@ -1,12 +1,10 @@
 module.exports = {
-  parser: "@babel/eslint-parser",
   parserOptions: {
-    ecmaVersion: 2019,
+    ecmaVersion: 2020,
     sourceType: "module",
-    requireConfigFile: false,
   },
   env: {
-    es6: true,
+    es2017: true,
     browser: true,
   },
   plugins: ["svelte3"],
