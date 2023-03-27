@@ -7,7 +7,7 @@
 <div class="container">
   <section class="mx-40 py-10">
     {#each data.sortedPosts as post}
-      <div
+                            <div
         class="mb-4 py-4 border-b border-b-gray-300"
         on:click={goto(`/blog/${post.slug}`)}
         on:keydown={goto(`blog/${post.slug}`)}
