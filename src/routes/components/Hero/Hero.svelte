@@ -1,10 +1,10 @@
 <script>
-import { goto } from '$app/navigation';
-import { fade, scale } from 'svelte/transition';
+  import { goto } from "$app/navigation";
+  import { fade, scale } from "svelte/transition";
 
-let y;
-
+  let y;
 </script>
+
 <svelte:window bind:scrollY={y} />
 
 <div class="hero h-[105vh]">
@@ -27,19 +27,26 @@ let y;
       </div>
       <h1 class="text-5xl font-bold font-primary">Starter Kit</h1>
       <p class="py-6 font-primary uppercase">
-       🚀 🛸 🏖️ Svelte Kit + TailwindCss + DaisyUI 🦖  🐳    ☠️ 
+        🚀 🛸 🏖️ Svelte Kit + TailwindCss + DaisyUI 🦖  🐳    ☠️
       </p>
-      {#if !y }
-        <div transition:scale={{
-          duration: 1000,
-          baseScale: 0.2
-        }}>
-      <p class="text-xl">&darr;</p>
-      </div>
-      {/if}  
+      {#if !y}
+        <div
+          transition:scale={{
+            duration: 1000,
+            baseScale: 0.2,
+          }}
+        >
+          <p class="text-xl">&darr;</p>
+        </div>
+      {/if}
       {#if y > 10}
-        <button in:fade="{{ duration: 800 }}" out:fade={{ duration: 200 }} on:click={() => goto('/blog')} class="btn btn-primary">Get Started</button>
-      {/if}   
+        <button
+          in:fade={{ duration: 800 }}
+          out:fade={{ duration: 200 }}
+          on:click={() => goto("/blog")}
+          class="btn btn-primary">Get Started</button
+        >
+      {/if}
     </div>
   </div>
 </div>
