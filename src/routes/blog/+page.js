@@ -1,13 +1,13 @@
-import { error } from '@sveltejs/kit';
-import { getBlogPosts } from '$lib/utils.js';
+import { error } from "@sveltejs/kit";
+import { getBlogPosts } from "$lib/utils.js";
 
 /** @type {import('./$types').PageLoad} */
-export async function load({ params }){
-    const sortedPosts = getBlogPosts()
+export async function load({ params }) {
+  const sortedPosts = getBlogPosts();
 
-    return {
-        sortedPosts
-    };
+  return {
+    sortedPosts,
+  };
 
-    throw error(404, 'Not found');
-  }
+  throw error(404, "Not found");
+}
