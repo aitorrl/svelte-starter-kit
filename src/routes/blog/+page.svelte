@@ -14,8 +14,8 @@
         <p class="text-xs mb-2">{convertDateToString(post.date)}</p>
         <a class="text-2xl mb-3 text-pink-600 hover:text-gray-500" href={`/blog/${post.slug}`}>{post.title}</a>
         {#if post.image}
-          <img src={`${post.image}`} alt="" />
-        {:else}
+                    <img src={`${post.image}`} alt="" />
+              {:else}
           <p class="mb-2">{post.description}</p>
         {/if}
         <div class="text-sm">
