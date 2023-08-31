@@ -3,10 +3,6 @@
 </script>
 
 <svelte:head>
-  <title>Title</title>
-  <meta name="title" content="Title | Bikolabs" />
-  <meta name="description" content="Description" />
-
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link

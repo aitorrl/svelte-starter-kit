@@ -18,6 +18,10 @@ ejecutar: `yarn dev`
 
 ejecutar: `yarn format`
 
+## Importar cables
+
+ejecutar: `yarn cables ID`
+
 ## Recomendaciones para VScode
 
 Instalar plugin Svelte

@@ -24,6 +24,50 @@ module.exports = {
       desktoplarge: "1280px",
       // => @media (min-width: 1280px) { ... }
     },
+    fontSize: {
+      xl: [
+        "24px",
+        {
+          lineHeight: "2rem",
+        },
+      ],
+      "2xl": [
+        "26px",
+        {
+          lineHeight: "2rem",
+        },
+      ],
+      "3xl": [
+        "30px",
+        {
+          lineHeight: "2.25rem",
+        },
+      ],
+      "4xl": [
+        "34px",
+        {
+          lineHeight: "3.125rem",
+        },
+      ],
+      "5xl": [
+        "50px",
+        {
+          lineHeight: "2.25rem",
+        },
+      ],
+      "6xl": [
+        "60px",
+        {
+          lineHeight: "2.25rem",
+        },
+      ],
+      min: [
+        "12px",
+        {
+          lineHeight: "1.25rem",
+        },
+      ],
+    },
   },
   plugins: [require("daisyui")],
 };
